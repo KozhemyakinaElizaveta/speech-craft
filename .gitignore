@@ -1,0 +1,50 @@
+# Игнорирование системных файлов и папок
+.DS_Store
+Thumbs.db
+
+# Игнорирование файлов IDE (например, VS Code, WebStorm)
+.vscode/
+.idea/
+*.code-workspace
+
+# Игнорирование локальных настроек
+.env
+.env.local
+*.env.*
+
+# Игнорирование зависимостей Node.js
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Игнорирование скомпилированных файлов TypeScript/JavaScript
+dist/
+build/
+*.js
+*.js.map
+*.d.ts
+
+# Игнорирование логов и временных файлов
+logs/
+*.log
+*.tmp
+temp/
+
+# Игнорирование загруженных файлов или кэша
+uploads/
+.cache/
+coverage/
+
+# Игнорирование специфичных для браузеров файлов
+manifest.json
+service-worker.js
+
+# Игнорирование локальных тестовых данных
+test-results/
+*.test.js
+*.spec.js
+
+# Прочие файлы
+*.bak
+*.swp

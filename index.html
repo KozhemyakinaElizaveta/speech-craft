@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeechCraft</title>
+    <link rel="stylesheet" href="/speech-craft/global.css" />
+    <link rel="stylesheet" href="/speech-craft/style.css" />
+    <link rel="stylesheet" href="/speech-craft/button.css" />
+    <link rel="stylesheet" href="/speech-craft/tab-panel.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/speech-craft/assets/index-C9WF8dM4.js"></script>
+  </head>
+
+  <body>
+    <div class="tab-panel">
+      <button id="becomeMainTab" class="control-button">Become Main Tab</button>
+      <button id="becomeSecondaryTab" class="control-button">
+        Become Secondary Tab
+      </button>
+      <span id="tabStatus" class="tab-status"></span>
+    </div>
+    <main>
+      <div class="canvas-container">
+        <canvas class="canvas" id="canvas"></canvas>
+      </div>
+      <div class="controls-sidebar" id="controls">
+        <h2>Control panel</h2>
+        <a href="/" target="_blank" class="control-link-button">Open new tab</a>
+        <div class="control-buttons-grid">
+          <button id="addCircle" class="control-button">Circle</button>
+          <button id="addSquare" class="control-button">Square</button>
+          <button id="addRectangle" class="control-button">Rectangle</button>
+          <button id="addTriangle" class="control-button">Triangle</button>
+        </div>
+        <button id="deleteLastShape" class="control-button control-button-delete__hidden">
+          Delete last shape
+        </button>
+        <button id="speech" class="control-button-speech">Speech</button>
+        <select id="themeSelect" class="theme-select">
+          <option value="light">Light Theme</option>
+          <option value="dark">Dark Theme</option>
+          <option value="system">System Theme</option>
+        </select>
+        <div class="colors-select">
+          <h3>Pick a color</h3>
+          <div class="colors-grid">
+            <button
+              class="color-button"
+              data-color="#FF0000"
+              style="background-color: #ff0000"
+              aria-label="Select red color"
+            ></button>
+            <button
+              class="color-button"
+              data-color="#FFFF00"
+              style="background-color: #ffff00"
+              aria-label="Select yellow color"
+            ></button>
+            <button
+              class="color-button"
+              data-color="#00FF00"
+              style="background-color: #00ff00"
+              aria-label="Select green color"
+            ></button>
+            <button
+              class="color-button"
+              data-color="#0000FF"
+              style="background-color: #0000ff"
+              aria-label="Select blue color"
+            ></button>
+            <button
+              class="color-button"
+              data-color="#FFC0CB"
+              style="background-color: #ffc0cb"
+              aria-label="Select pink color"
+            ></button>
+            <button
+              class="color-button"
+              data-color="#FFA500"
+              style="background-color: #ffa500"
+              aria-label="Select orange color"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
