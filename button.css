@@ -28,7 +28,7 @@
   &:before {
     --size: 48px;
     content: "";
-    background-image: url("/speech-icon.png");
+    background-image: url("./speech-icon.png");
     background-size: var(--size) var(--size);
     background-repeat: no-repeat;
     background-position: center;
