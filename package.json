@@ -1,13 +1,13 @@
 {
-  "name": "my-vite-project",
+  "name": "speech-craft",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "tests": "vitest",
     "test:single": "node run.js",
+    "build": "vite build && cp public/*.css dist/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

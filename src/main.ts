@@ -21,7 +21,6 @@ class Game {
 
     this.gameState = new GameState(this.storage);
 
-    // Fix the canvasId parameter here
     this.figuresController = new FiguresController("canvas", this.storage);
 
     this.colorController = new ColorController(
@@ -31,7 +30,6 @@ class Game {
 
     this.themeController = new ThemeController(this.storage);
 
-    // Fix the canvasId parameter here
     this.renderer = new Renderer("canvas", this.storage);
 
     this.initialize();
@@ -124,7 +122,6 @@ class Game {
   }
 }
 
-// Ensure the DOM is fully loaded before initializing the game
 document.addEventListener("DOMContentLoaded", () => {
   new Game();
 });

@@ -21,9 +21,6 @@ pnpm-lock.yaml
 # Игнорирование скомпилированных файлов TypeScript/JavaScript
 dist/
 build/
-*.js
-*.js.map
-*.d.ts
 
 # Игнорирование логов и временных файлов
 logs/
