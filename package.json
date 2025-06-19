@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "tests": "vitest",
     "test:single": "node run.js",
     "predeploy": "npm run build",
