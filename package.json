@@ -7,7 +7,7 @@
     "dev": "vite",
     "tests": "vitest",
     "test:single": "node run.js",
-    "build": "vite build && cp public/*.css dist/",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

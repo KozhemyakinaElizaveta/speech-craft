@@ -1,15 +1,11 @@
 import { defineConfig } from "vite";
+import { resolve } from 'path';
 
 export default defineConfig({
-  base: "/speech-craft/",
-  assetsInclude: ['**/*.css', '**/*.woff2'], 
+  base: '/speech-craft/',
   build: {
-    outDir: "dist",
-    assetsInlineLimit: 0,
+    outDir: 'dist',
     emptyOutDir: true,
   },
-  server: {
-    open: true,
-    port: 8080,
-  },
+  publicDir: 'public',
 });
